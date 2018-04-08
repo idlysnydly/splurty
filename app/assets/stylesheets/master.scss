@@ -1,1 +1,78 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Exo+2:200,200i,400,400i,700,700i,900,900i');
+
+
+body{
+  font-family:'Exo 2', sans-serif;
+  font-size:16px;
+}
+h1{
+  font-weight:700;
+}
+h2{
+  font-weight:900;
+}
+
+.clear {
+  clear:both;
+}
+
+.circle {
+    font-weight:bold;
+    font-style: italic;
+    position: relative;
+    border-radius: 100%;
+    background: #f84342;
+    border: 1px solid #F7F7F7;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    transform:rotate(11deg);
+    -ms-transform:rotate(11deg); /* IE 9 */
+    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+}
+.flex-center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+}
+.slogan{
+  font-family:'Exo 2', sans-serif;
+  font-weight:200;
+  font-style: italic;
+  font-size:18px;
+  font-size:1.125rem;
+  padding-top:1.75rem;
+  text-align:center;
+}
+.links {
+  padding-top:1.75rem;
+  /*text-align: right;*/
+}
+.links a{
+  font-size:18px;
+  font-size:1.125rem;
+  color:black;
+  padding:0 1px 1px;
+  margin:0 2.5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.links a:hover{
+  text-decoration: none;
+  border-color: #00bb9a;
+}
+
+header{
+  border-bottom:thin solid #ddd;
+}
