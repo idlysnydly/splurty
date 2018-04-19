@@ -20,6 +20,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0'
 gem 'popper_js', '>= 1.9.9'
 
+# Simple Form
+gem 'simple_form'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
