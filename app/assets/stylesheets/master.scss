@@ -13,7 +13,7 @@ h1{
   font-size:48px;
   font-size:3rem;
   line-height: 1;
-  margin:0 0 1rem;  
+  margin:2rem 0;   
 }
 h2{
   font-weight:normal;
@@ -26,7 +26,7 @@ h3{
   font-size:48px;
   font-size:3rem;
   line-height: 1;
-  margin:0 0 1rem;  
+  margin:1rem 0;  
 }
 
 .clear {
@@ -118,7 +118,14 @@ header{
 }
 
 form#new_quote label{
-  margin-right:10px;
+  /*margin-right:10px;*/
+  font-size:18px;
+  font-size:1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+form#new_quote {
+  margin-top:2rem;
 }
 form#new_quote .btn{
   margin-top:10px;
