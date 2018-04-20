@@ -28,6 +28,14 @@ h3{
   line-height: 1;
   margin:1rem 0;  
 }
+h4{
+  font-weight:900;
+  text-align:center;
+  font-size:24px;
+  font-size:1.5rem;
+  line-height: 1.25;
+  margin:0;  
+}
 
 .clear {
   clear:both;
@@ -44,6 +52,28 @@ h3{
 .center{
   text-align: center;
   margin:0 auto;
+}
+.btn.btn-success{
+  background-color:#00bb9a;
+  border-color:#00bb9a;
+}
+.btn.btn-success-invert{
+  background-color:transparent;
+  border: 1px solid #00bb9a;
+  color: #00bb9a;
+  text-decoration: none;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.btn.btn-success-invert:hover{
+  background-color:#00bb9a;
+  border: 1px solid #00bb9a;
+  color: white;
+  text-decoration: none;
+}
+.links .btn-link{
+  border-bottom: none;
 }
 .circle {
     font-weight:bold;
@@ -85,7 +115,7 @@ h3{
   text-align:center;
 }
 .links {
-  padding-top:1.75rem;
+  padding-top:1.5rem;
   text-align: right;
 }
 .links a{
@@ -93,12 +123,15 @@ h3{
   font-size:1.125rem;
   color:black;
   padding:0 1px 1px;
-  margin:0 2.5px;
+  margin:0 5px;
   border-bottom: 1px solid #dfdfdf;
 }
 .links a:hover{
   text-decoration: none;
   border-color: #00bb9a;
+}
+.links .btn{
+  margin:0 5px;
 }
 
 header{
@@ -107,7 +140,7 @@ header{
 .logo{
   max-height: 85px;
 }
-.btn.btn-danger.next-quote{
+.next-quote{
   margin-top:10px;
   font-size:1em;
 }
@@ -124,9 +157,9 @@ form#new_quote label{
   font-weight: 500;
   text-transform: uppercase;
 }
-form#new_quote {
+/*form#new_quote {
   margin-top:2rem;
-}
+}*/
 form#new_quote .btn{
   margin-top:10px;
 }

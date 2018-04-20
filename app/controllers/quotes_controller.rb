@@ -3,13 +3,15 @@ class QuotesController < ApplicationController
     @quote = Quote.order("RANDOM()").first
     @photo = Photo.random
   end
-
-  def new
-    @quote = Quote.new
-  end
+  
 
   def create
-    Quote.create(quote_params)
+    @quote = Quote.create(quote_params)
+
+    if @quote.invalid?
+      flash[:error] = "<strong>Could not save</strong> the data you added is invalid."
+    end
+
     redirect_to root_path
   end
 
