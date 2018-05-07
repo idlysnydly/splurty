@@ -12,7 +12,7 @@ h1{
   font-style: italic;
   font-size:48px;
   font-size:3rem;
-  line-height: 1;
+  line-height: 1.15;
   margin:2rem 0;   
 }
 h2{
@@ -36,7 +36,17 @@ h4{
   line-height: 1.25;
   margin:0;  
 }
-
+a{
+  color:#222;
+  padding:0 1px 1px;
+  border-bottom: 1px solid #00bb9a;
+}
+a:hover{
+  color:#222;
+  background-color: #e2fffa;
+  text-decoration: none;
+  border-color: #00bb9a;
+}
 .clear {
   clear:both;
 }
@@ -75,25 +85,6 @@ h4{
 .links .btn-link{
   border-bottom: none;
 }
-.circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
-}
 .flex-center{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,15 +112,17 @@ h4{
 .links a{
   font-size:18px;
   font-size:1.125rem;
-  color:black;
+  color:#222;
   padding:0 1px 1px;
   margin:0 5px;
+
   border-bottom: 1px solid #dfdfdf;
 }
 .links a:hover{
   text-decoration: none;
   border-color: #00bb9a;
 }
+
 .links .btn{
   margin:0 5px;
 }
@@ -137,17 +130,29 @@ h4{
 header{
   border-bottom:thin solid #ddd;
 }
-.logo{
+.logo a{
+  padding:0;
+  border-bottom:none;
+}
+.logo a:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+.logo img{
   max-height: 85px;
 }
 .next-quote{
   margin-top:10px;
   font-size:1em;
 }
+.next-quote:hover{
+  background-color:#00947a;
+
+}
 .footer-blurb{
   text-align:right;
   font-style: italic;
-  margin-top:5px;
+  margin-top:7px;
 }
 
 form#new_quote label{
@@ -155,11 +160,38 @@ form#new_quote label{
   font-size:18px;
   font-size:1.125rem;
   font-weight: 500;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 /*form#new_quote {
   margin-top:2rem;
 }*/
 form#new_quote .btn{
   margin-top:10px;
+}
+::selection {
+  background-color: #e2fffa;
+}
+
+/* MOBILE STYLE */
+
+@media (max-width: 576px) {
+  html{
+    font-size:14px;
+  }
+  .slogan{
+    display:none;
+  }
+  footer{
+    text-align:center;
+  }
+  .footer-blurb{
+    text-align:center;
+    margin-top:8px;
+  }
+  h1{
+    text-align:center;
+  }
+  h2{
+    text-align:center;
+  }
 }

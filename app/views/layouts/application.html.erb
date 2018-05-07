@@ -15,16 +15,16 @@
     <!-- style="background-image: url( asset_path @photo %>)" -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-3">
+        <div class="col-3 logo">
           <%= link_to root_path do %>
-          <%= image_tag('idlysnydly-logo.png', :alt => 'Logo', class: 'logo') %>
+          <%= image_tag('idlysnydly-logo.png', :alt => 'Logo') %>
           <% end %>
         </div>
-        <div class="col-6 slogan">
-          Splurting out unsolicited advice about entrepreneurship since 2016
+        <div class="col-6 hidden-xs-down slogan">
+          Splurting out the most random stuff, I swear.
         </div>
-        <div class="col-3 links">
-          <%= link_to 'About', '#' %>
+        <div class="offset-1 col-8 offset-sm-0 col-sm-3 links">
+          <%#= link_to 'About', '#' %>
           <%= link_to '', :class => 'btn-link', 'data-toggle' => 'modal', 'data-target' => '#myModal' do %>
           <button type="button" class="btn btn-success-invert">
             Contribute
@@ -52,8 +52,8 @@
       </div>
       <%= simple_form_for Quote.new do |f| %>
       <div class="modal-body">
-          <%= f.input :saying %>
-          <%= f.input :author %>
+          <%= f.input :saying, label: "What saying do you want to add?", placeholder: "Where the hell is the blue food?" %>
+          <%= f.input :author, label: "Who is the author of this quote?", placeholder: "George Carlin" %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -76,16 +76,17 @@
       <% end %>
 
       <%= yield %>
+      
     </div>
   
 
   <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6 text-muted">
+        <div class="col-12 col-sm-6 text-muted">
           <%= link_to "Next quote, please.", root_path, class: 'btn btn-success next-quote' %>
         </div>
-        <div class="col-6 footer-blurb text-muted">
+        <div class="col-12 col-sm-6 footer-blurb text-muted">
           Proudly coded by <span class="bold all-caps">Mike Snyder</span><br>
           See more stuff I coded at <a href="http://idlysnydly.com">idlysnydly.com</a>
         </div>
