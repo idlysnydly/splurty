@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
   def index
     @quote = Quote.order("RANDOM()").first
-    @photo = Photo.random
+    # @photo = Photo.random
   end
   
 
